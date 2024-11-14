@@ -18,7 +18,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copie o jar do estágio de construção anterior
-COPY --from=build /app/target/dsmovie-0.0.1-SNAPSHOT.jar /app/dslist.jar
+COPY --from=build /app/target/dslist-0.0.1-SNAPSHOT.jar /app/dslist.jar
 
 # Exponha a porta que a aplicação irá rodar
 EXPOSE 8080
